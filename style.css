@@ -1,0 +1,116 @@
+
+    :root{
+      --bg:#f7f7f7; --card:#ffffff; --ink:#1f2937; --muted:#6b7280; --ring:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      color:var(--ink); background:var(--bg);
+    }
+    header{padding:24px 16px; text-align:center;}
+    h1{margin:0 0 6px; font-size:clamp(1.25rem,2.2vw,1.8rem);}
+    .wrap{max-width:1100px; margin:0 auto; padding:0 16px 40px;}
+
+    /* Galleria immagini */
+    .gallery{
+      display:grid; gap:16px; grid-template-columns:repeat(2,1fr);
+    }
+    @media (max-width:800px){
+      .gallery{grid-template-columns:1fr}
+    }
+    figure{
+      margin:0; background:var(--card); border:1px solid var(--ring); border-radius:14px;
+      padding:10px; box-shadow:0 6px 18px rgba(0,0,0,.06);
+    }
+    img{
+      display:block; width:100%; height:auto; border-radius:10px;
+    }
+    figcaption{font-size:.92rem; color:var(--muted); text-align:center; margin-top:8px;}
+
+    /* Tabella (immagine) */
+    .table-card{
+      margin-top:22px; background:var(--card); border:1px solid var(--ring);
+      border-radius:14px; padding:12px; box-shadow:0 6px 18px rgba(0,0,0,.06);
+    }
+    .table-card h2{
+      margin:6px 10px 12px; font-size:1.05rem; font-weight:600;
+    }
+
+    /* Pulsante stampa */
+    .actions{display:flex; justify-content:flex-end; gap:8px; margin:12px 0 0;}
+    .btn{
+      appearance:none; border:1px solid var(--ring); background:#fff; color:var(--ink);
+      padding:8px 12px; border-radius:10px; cursor:pointer; font-weight:600;
+    }
+    .btn:active{transform:translateY(1px)}
+    @media print{
+      header,.actions{display:none}
+      body{background:#fff}
+      .wrap{padding:0}
+      figure,.table-card{box-shadow:none; border-color:#ccc}
+    }
+
+    /* --- Tabella fancy --- */
+.table-card table.fancy{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  border-radius:14px;
+  overflow:hidden;            /* arrotondamenti reali sugli angoli */
+  background:#fff;
+}
+
+/* Header: appiccicoso e con gradient leggero */
+.table-card table.fancy thead th{
+  position:sticky; top:0; z-index:1;
+  background:linear-gradient(180deg,#111827,#1f2937);
+  color:#fff;
+  padding:14px 16px;
+  text-align:left;
+  letter-spacing:.02em;
+  font-weight:700;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* Celle */
+.table-card table.fancy th,
+.table-card table.fancy td{
+  padding:14px 16px;
+  border-bottom:1px solid var(--ring);
+  vertical-align:middle;
+}
+
+/* Zebra + hover */
+.table-card table.fancy tbody tr:nth-child(even){ background:#fafafa; }
+.table-card table.fancy tbody tr:hover{ background:#f3f4f6; }
+
+/* Colonne utili */
+.table-card table.fancy td.num{ 
+  width:120px; color:#6b7280; font-weight:600;
+}
+.table-card table.fancy td.qty{
+  text-align:right; 
+  font-variant-numeric: tabular-nums; 
+  width:120px;
+}
+.table-card table.fancy td.qty .badge{
+  display:inline-block; min-width:2.2em; padding:.25em .6em;
+  border-radius:999px; background:#111827; color:#fff; text-align:center;
+}
+
+/* Caption opzionale */
+.table-card table.fancy caption{
+  caption-side: top; padding:8px 0 12px; font-weight:600; color:var(--muted);
+}
+
+/* Mobile: trasformo la tabella in card leggibili */
+@media (max-width:760px){
+  .table-card{
+    overflow-x:auto;
+  }
+  .table-card table.fancy{
+    display:block;
+    min-width:600px;   /* così non collassa */
+  }
+}
+
