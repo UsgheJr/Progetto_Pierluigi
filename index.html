@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Il nostro Progetto – Esploso, Risultato Finale e Tabella dei Componenti</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Il Nostro Progetto</h1>
+    <p style="color:#6b7280; margin:0">Esploso, Risultato Finale e Tabella dei Componenti</p>
+  </header>
+
+  <main class="wrap">
+    <!-- Due immagini -->
+    <section class="gallery" aria-label="Galleria immagini">
+      <figure>
+        <img src="pezzi.jpg" alt="Vista esplosa con numerazione dei componenti" loading="lazy" />
+        <figcaption style="margin-top: 8em;">Vista esplosa con riferimenti ai componenti</figcaption>
+      </figure>
+
+      <figure>
+        <img src="tritacarne.jpg" alt="Vista del prodotto assemblato" loading="lazy" />
+        <figcaption>Prodotto assemblato</figcaption>
+      </figure>
+    </section>
+
+    <section class="table-card" aria-label="Tabella componenti">
+    <div style="overflow:auto">
+    <table id="bom" class="fancy">
+        <thead>
+        <tr>
+            <th>NUM. ARTICOLO</th>
+            <th>NOME ARTICOLO</th>
+            <th>DESCRIZIONE</th>
+            <th>QUANTITÀ</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td class="num">1</td><td>TRAMOGGIA</td><td>CONTENITORE DI CARICO CARNE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">2</td><td>TUBO DI ALIMENTAZIONE</td><td>CONDOTTO MACINAZIONE CARNE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">3</td><td>SPINGICARNE</td><td>UTENSILE DI SPINTA PRODOTTO</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">4</td><td>COCLEA</td><td>VITE SENZA FINE PER AVANZAMENTO CARNE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">5</td><td>CUSCINETTO</td><td>SUPPORTO ROTAZIONE COCLEA</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">6</td><td>O-RING</td><td>GUARNIZIONE DI TENUTA</td><td class="qty"><span class="badge">2</span></td></tr>
+        <tr><td class="num">7</td><td>COLTELLO ROTANTE</td><td>LAMA DI TAGLIO CARNE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">8</td><td>PIASTRA 4.5mm</td><td>GRIGLIA MACINAZIONE FINE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">9</td><td>PIASTRA 6mm</td><td>GRIGLIA MACINAZIONE MEDIA</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">10</td><td>PIASTRA 8mm</td><td>GRIGLIA MACINAZIONE GROSSA</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">11</td><td>ANELLO</td><td>AUSILIARE PER FISSAGGIO</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">12</td><td>GHIERA</td><td>BLOCCAGGIO FINALE GRUPPO MACINAZIONE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">13</td><td>ADATTATORE COCLEA</td><td>COLLEGAMENTO COCLEA–MOTORIDUTTORE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">14</td><td>CASSA MOTORE</td><td>STRUTTURA CONTENIMENTO MOTORE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">15</td><td>STAFFA SUPERIORE</td><td>SUPPORTO SUPERIORE MOTORE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">16</td><td>STAFFA INFERIORE</td><td>SUPPORTO INFERIORE MOTORE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">17</td><td>PIASTRA POSTERIORE</td><td>CHIUSURA RETRO CASSA MOTORE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">18</td><td>COPERCHIO SUPERIORE</td><td>COPERTURA PARTE SUPERIORE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">19</td><td>SUPPORTO TRAMOGGIA</td><td>RINFORZO SOSTEGNO TRAMOGGIA</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">20</td><td>PIEDINO</td><td>SUPPORTO STABILE MACCHINA</td><td class="qty"><span class="badge">4</span></td></tr>
+
+        <tr><td class="num">21</td><td>BULLONE 30mm M10</td><td>ELEMENTO DI FISSAGGIO</td><td class="qty"><span class="badge">8</span></td></tr>
+        <tr><td class="num">22</td><td>BULLONE 38.5mm M6</td><td>ELEMENTO DI FISSAGGIO</td><td class="qty"><span class="badge">4</span></td></tr>
+        <tr><td class="num">23</td><td>BULLONE 44mm M14</td><td>ELEMENTO DI FISSAGGIO</td><td class="qty"><span class="badge">4</span></td></tr>
+        <tr><td class="num">24</td><td>BULLONE 50mm M10</td><td>ELEMENTO DI FISSAGGIO</td><td class="qty"><span class="badge">20</span></td></tr>
+        <tr><td class="num">25</td><td>BULLONE 50mm M14</td><td>ELEMENTO DI FISSAGGIO</td><td class="qty"><span class="badge">4</span></td></tr>
+        <tr><td class="num">26</td><td>RONDELLA M10</td><td>RIPARTIZIONE CARICO BULLONE</td><td class="qty"><span class="badge">28</span></td></tr>
+        <tr><td class="num">27</td><td>RONDELLA M14</td><td>RIPARTIZIONE CARICO BULLONE</td><td class="qty"><span class="badge">8</span></td></tr>
+        <tr><td class="num">28</td><td>RONDELLA M6</td><td>RIPARTIZIONE CARICO BULLONE</td><td class="qty"><span class="badge">4</span></td></tr>
+        <tr><td class="num">29</td><td>GUARNIZIONE CAVO ELETTRICO</td><td>PASSACAVO DI TENUTA ALIMENTAZIONE</td><td class="qty"><span class="badge">1</span></td></tr>
+        <tr><td class="num">30</td><td>MOTORIDUTTORE</td><td>—</td><td class="qty"><span class="badge">1</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div class="actions" style="justify-content:center; gap:8px">
+        <button class="btn" id="exportCsv" style="font-size: large; font-weight: bold;">Scarica la Tabella</button>
+    </div>
+    </section>
+
+    <script>
+    // Esporta in CSV ciò che vedi in tabella
+    document.getElementById('exportCsv').addEventListener('click', () => {
+        const rows = [...document.querySelectorAll('#bom tr')]
+        .map(tr => [...tr.children].map(td => `"${td.innerText.replace(/"/g,'""')}"`).join(','))
+        .join('\n');
+        const blob = new Blob([rows], {type:'text/csv;charset=utf-8;'});
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'distinta_componenti.csv';
+        a.click();
+        URL.revokeObjectURL(a.href);
+    });
+    </script>
+  </main>
+</body>
+</html>
